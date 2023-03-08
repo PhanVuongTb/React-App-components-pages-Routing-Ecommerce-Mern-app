@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
@@ -46,7 +46,7 @@ const Register = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
               className="form-control"
-              id="exampleInputEmail1"
+              id="exampleInputName"
               placeholder="Enter Your Name"
               required
               autoFocus
@@ -58,7 +58,7 @@ const Register = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="form-control"
-              id="exampleInputEmail1"
+              id="exampleInputEmail"
               placeholder="Enter Your Email "
               required
             />
@@ -69,7 +69,7 @@ const Register = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="form-control"
-              id="exampleInputPassword1"
+              id="exampleInputPassword"
               placeholder="Enter Your Password"
               required
             />
@@ -80,7 +80,7 @@ const Register = () => {
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               className="form-control"
-              id="exampleInputEmail1"
+              id="exampleInputPhone"
               placeholder="Enter Your Phone"
               required
             />
@@ -91,7 +91,7 @@ const Register = () => {
               value={address}
               onChange={(e) => setAddress(e.target.value)}
               className="form-control"
-              id="exampleInputEmail1"
+              id="exampleInputAddress"
               placeholder="Enter Your Address"
               required
             />
